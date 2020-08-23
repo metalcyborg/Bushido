@@ -1,6 +1,6 @@
 package phibonacci
 
-import com.google.common.truth.Truth
+import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Test
 import java.math.BigInteger
@@ -20,47 +20,47 @@ class FibonacciSumTest {
 
     @Test
     fun `sum of zero items`() {
-        Truth.assertThat(fibonacci.getSum(0)).isEqualTo(BigInteger.ZERO)
+        assertThat(fibonacci.getSum(0)).isEqualTo(BigInteger.ZERO)
     }
 
     @Test
     fun `sum of one item`() {
-        Truth.assertThat(fibonacci.getSum(1)).isEqualTo(BigInteger.ZERO)
+        assertThat(fibonacci.getSum(1)).isEqualTo(BigInteger.ZERO)
     }
 
     @Test
     fun `sum of two items`() {
-        Truth.assertThat(fibonacci.getSum(2)).isEqualTo(BigInteger.ONE)
+        assertThat(fibonacci.getSum(2)).isEqualTo(BigInteger.ONE)
     }
 
     @Test
     fun `sum of three items`() {
-        Truth.assertThat(fibonacci.getSum(3)).isEqualTo(BigInteger.TWO)
+        assertThat(fibonacci.getSum(3)).isEqualTo(BigInteger.TWO)
     }
 
     @Test
     fun `sum of four items`() {
-        Truth.assertThat(fibonacci.getSum(4)).isEqualTo(BigInteger.valueOf(4))
+        assertThat(fibonacci.getSum(4)).isEqualTo(BigInteger.valueOf(4))
     }
 
     @Test
     fun `sum of ten items`() {
-        Truth.assertThat(fibonacci.getSum(10)).isEqualTo(BigInteger.valueOf(88))
+        assertThat(fibonacci.getSum(10)).isEqualTo(BigInteger.valueOf(88))
     }
 
     @Test
     fun `sum of 50 items`() {
-        Truth.assertThat(fibonacci.getSum(50)).isEqualTo(BigInteger.valueOf(20_365_011_073L))
+        assertThat(fibonacci.getSum(50)).isEqualTo(BigInteger.valueOf(20_365_011_073L))
     }
 
     @Test
     fun `sum of 100 items`() {
-        Truth.assertThat(fibonacci.getSum(100)).isEqualTo(BigInteger("573147844013817084100"))
+        assertThat(fibonacci.getSum(100)).isEqualTo(BigInteger("573147844013817084100"))
     }
 
     @Test
     fun `sum of 10000 items`() {
-        Truth.assertThat(fibonacci.getSum(10000)).isEqualTo(BigInteger("544383731135652813387342609937503801" +
+        assertThat(fibonacci.getSum(10000)).isEqualTo(BigInteger("544383731135652813387342609937503801" +
                 "35389184554695967026247715841208582865622349017083051547938960541173822675978026317384359584751116" +
                 "24143917470264295916992558633411790606304808979353147610846625907275936789915067796008830659796664" +
                 "19658249377218003814411588410424809979846964873753371800281637633177819279411013692627509795098007" +

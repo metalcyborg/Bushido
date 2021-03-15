@@ -6,7 +6,7 @@
         <activity
             android:name=".BroadcastActivity"
             android:label="@string/title_activity_broadcast"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Theme.AndroidKata.NoActionBar" />
 
         <receiver
             android:name=".simple.SimpleReceiver"

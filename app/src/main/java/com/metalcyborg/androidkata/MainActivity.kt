@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.metalcyborg.androidkata.broadcast.BroadcastActivity
+import com.metalcyborg.androidkata.images.ImagesActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -25,7 +26,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun showModules() {
         modules.adapter = ModulesAdapter(arrayOf(
-            Module("BroadCastReceiver", BroadcastActivity::class)
+            Module("BroadCastReceiver", BroadcastActivity::class),
+            Module("Images", ImagesActivity::class)
         ), object: ModulesAdapter.ClickListener {
             override fun onClick(module: Module) {
                 module.startActivity(this@MainActivity)

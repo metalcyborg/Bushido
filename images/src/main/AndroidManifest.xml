@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.metalcyborg.androidkata.images">
+
+    <application>
+        <activity
+            android:name=".ImagesActivity"
+            android:label="@string/title_activity_images"
+            android:theme="@style/Theme.AndroidKata.NoActionBar"/>
+    </application>
+
+</manifest>

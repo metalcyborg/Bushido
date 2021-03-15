@@ -33,7 +33,7 @@ class ModulesAdapter(private val modules: Array<Module>, private val clickListen
 
         init {
             itemView.setOnClickListener {
-                listener.onClick(modules[layoutPosition])
+                listener.onClick(modules[adapterPosition])
             }
         }
     }
